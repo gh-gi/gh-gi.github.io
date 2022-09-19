@@ -1,0 +1,152 @@
+<!doctype html>
+<html class="no-js" lang="en"> <!----modernizr.js removes the class of no-js and changes it to js when the page runs ---->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grace Huffer</title>
+  <meta name="description" content="Grace Huffer is a junior website designer and developer based in Australia.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="Home Page">
+  <meta property="og:type" content="Website">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="Grace Huffer is a junior website designer and developer based in Australia.">
+  
+  <!--------style sheets-------->
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!--fonts-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@700&family=Antonio:wght@200&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap');
+  </style>
+  <!--Normalise css-->
+  <link rel="stylesheet" href="css/normalize.css">
+  <!--Custom css-->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="wrapper" data-bs-spy="scroll" data-bs-target=".main-nav" data-bs-smooth-scroll="true"  tabindex="0" data-bs-root-margin="0px 0px -555px"> <!--height of nav bar plus bg images-->
+  
+  <header>
+    <!--Main navigation-->
+    <div class="main-nav" id="sticky-nav">
+      <div class="main-nav-container container-flex">
+        <!--menu dropdown for mobile devices-->
+        <div class="menu" id="toggle-button">
+          <span class="fa-solid fa fa-bars" aria-hidden="true" title="View navigation items."></span>
+        </div>
+        <!--Logo-->
+        <div class="logo-container">
+          <h1><a href="index.html">Grace Huffer</a></h1>
+        </div>
+        <!--main-nav links-->
+        <ul class="navlist-items" id="nav-list">
+          <li class="list-item"><a href="#about">About</a></li>
+          <li class="list-item"><a href="#projects">Projects</a></li>
+        </ul>
+      </div> <!--end div main-nav-container container-flex-->
+    </div> <!--end div main-nav-->
+  </header>
+
+  <div class="content-container">
+
+    <!--Background image-->
+    <div class="background-img" style="background-image: url(img/ocean.jpg);">
+      <div class="banner container-flex">
+        <h2>Welcome to my portfolio!</h2>
+        <h3>I am passionate about <span>front-end web development</span> and all things creative.</h3>
+      </div> <!--end div container flex-->
+    </div> <!--end div background-img-->
+
+    <!--'About' section-->
+  <!--Bootstrap scrollspy-->
+  <!-- <div data-spy="scroll" data-target="#nav-list" data-offset="0"> -->
+
+    <section class="main-section" id="about">
+      <div class="main-flex container-flex">
+        <div class="content-left">
+          <h4>With qualifications in Website Development and Art History, I am interested in the intersection of coding and design.</h4>
+        </div><!--end content-left-->
+        <div class="content-right">
+          <p class="feature-para">This portfolio is shows some of my recent projects. The coding langauges used include HTML, CSS, JavaScript, JqueryUI, and PHP.</p>
+          </ul>
+        </div>
+      </div> <!--end div main container-->
+    </section> <!--end div main-->
+
+    <!--'Projects' section-->
+    <section class="project-section" id="projects">
+      <div class="project-flex container-flex">
+        <h4>Projects</h4>
+        <p>Some of the projects I have coded can be found below, along with a link to my paiting page on Instagram. When coding website templates, I aim for designs that are user-friendly, aesthetic, and accessibile.</p>
+        
+        <!--Cards-->
+        <div class="custom-row">
+          <!--Column One-->  
+          <div class="custom-card custom-column">
+            <img class="card-image" src="img/abstract_shape_1.png" alt=""> <!--empty alt text as the image is decorative only-->
+            <div class="custom-card-inner">
+              <h5>Example Bank Template</h5>
+              <p>This template was completed for my Certificate IV in Wesbsite Development.</p>
+              <p>The template includes use of HTML, CSS, JavaScript, JQueryUI, PHP, and Bootstrap.</p>
+              <div class="card-buttons">
+                <a href="https://gh-gi.github.io/responsive-bank-template/"><button>Demo</button></a>
+                <a href="https://github.com/gh-gi/responsive-bank-template"><button>GitHub</button></a>
+              </div>
+            </div>
+          </div>
+        
+          <!--Column Two-->
+          <div class="custom-card custom-column">
+            <img class="card-image" src="img/abstract_shape_2.png" alt=""> <!--empty alt text as the image is decorative only-->
+            <div class="custom-card-inner">
+              <h5>PHP Calculator</h5>
+              <p>This template was completed for my Certificate IV in Wesbsite Development.</p>
+              <p>The calculator uses PHP, HTML and CSS.</p>
+              <div class="card-buttons">
+                <a href="https://github.com/gh-gi/php-calculator"><button>GitHub</button></a>
+              </div>
+            </div>
+          </div>
+  
+          <!--Column Three-->
+          <div class="custom-card custom-column">
+            <img class="card-image" src="img/abstract_shape_3.png" alt=""> <!--empty alt text as the image is decorative only-->
+            <div class="custom-card-inner">
+              <h5>Other creative works</h5>
+              <p>In addition to coding, I paint with gouache, and was recently part of an exhibition at Temp Gallery in Northbridge, Western Australia.</p>
+              <div class="card-buttons">
+                <a href="https://www.instagram.com/gracehuff_studio/"><button>Instagram</button></a>
+              </div>
+            </div>
+          </div>
+  
+        </div><!--end div row-->
+      </div> <!--end div project-flex-->
+    </section> <!--end div project-section-->
+  
+  </div> <!--end div bootstrap data-spy-->
+  
+  </div> <!--end div content-container-->
+   
+  <!--Footer-->
+  <footer>
+    <div class="footer-container container-flex">
+      <div>
+        <p>&copy; Copyright Grace Huffer 2022</p>
+      </div>
+    </div><!--end div container-->
+  </footer>
+
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script> <!--for handling HTML5 with browsers that are older than HTML5-->
+  <script src="js/main.js"></script>
+  <!--Bootstrap-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
